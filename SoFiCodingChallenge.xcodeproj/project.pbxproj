@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		C39D606521A3695600D8DF0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D606421A3695600D8DF0D /* AppDelegate.swift */; };
-		C39D606721A3695600D8DF0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D606621A3695600D8DF0D /* ViewController.swift */; };
-		C39D606A21A3695600D8DF0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39D606821A3695600D8DF0D /* Main.storyboard */; };
 		C39D606C21A3695700D8DF0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C39D606B21A3695700D8DF0D /* Assets.xcassets */; };
 		C39D606F21A3695700D8DF0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39D606D21A3695700D8DF0D /* LaunchScreen.storyboard */; };
+		C39D607E21A85F2000D8DF0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39D607D21A85F2000D8DF0D /* Main.storyboard */; };
+		C39D608221A862BC00D8DF0D /* ImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D608121A862BC00D8DF0D /* ImageRequest.swift */; };
+		C39D608621A8637A00D8DF0D /* ImgurImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D608521A8637A00D8DF0D /* ImgurImage.swift */; };
+		C39D608821A875C300D8DF0D /* ImgurSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D608721A875C300D8DF0D /* ImgurSearchTableViewController.swift */; };
+		C39D608A21A875D400D8DF0D /* ImgurDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D608921A875D400D8DF0D /* ImgurDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C39D606121A3695600D8DF0D /* SoFiCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoFiCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39D606421A3695600D8DF0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C39D606621A3695600D8DF0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C39D606921A3695600D8DF0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C39D606B21A3695700D8DF0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C39D606E21A3695700D8DF0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C39D607021A3695700D8DF0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C39D607D21A85F2000D8DF0D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C39D608121A862BC00D8DF0D /* ImageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRequest.swift; sourceTree = "<group>"; };
+		C39D608521A8637A00D8DF0D /* ImgurImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgurImage.swift; sourceTree = "<group>"; };
+		C39D608721A875C300D8DF0D /* ImgurSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgurSearchTableViewController.swift; sourceTree = "<group>"; };
+		C39D608921A875D400D8DF0D /* ImgurDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgurDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,73 @@
 		C39D606321A3695600D8DF0D /* SoFiCodingChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				C39D607C21A369D200D8DF0D /* Network Client */,
+				C39D607B21A369D000D8DF0D /* Storyboard */,
+				C39D607A21A3699B00D8DF0D /* View Controller */,
+				C39D607921A3699A00D8DF0D /* View */,
+				C39D607821A3699900D8DF0D /* Model Controller */,
+				C39D607721A3699700D8DF0D /* Model */,
+				C39D607621A3698F00D8DF0D /* Resources */,
+			);
+			path = SoFiCodingChallenge;
+			sourceTree = "<group>";
+		};
+		C39D607621A3698F00D8DF0D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				C39D606421A3695600D8DF0D /* AppDelegate.swift */,
-				C39D606621A3695600D8DF0D /* ViewController.swift */,
-				C39D606821A3695600D8DF0D /* Main.storyboard */,
 				C39D606B21A3695700D8DF0D /* Assets.xcassets */,
 				C39D606D21A3695700D8DF0D /* LaunchScreen.storyboard */,
 				C39D607021A3695700D8DF0D /* Info.plist */,
 			);
-			path = SoFiCodingChallenge;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C39D607721A3699700D8DF0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C39D608521A8637A00D8DF0D /* ImgurImage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C39D607821A3699900D8DF0D /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		C39D607921A3699A00D8DF0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C39D607A21A3699B00D8DF0D /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C39D608721A875C300D8DF0D /* ImgurSearchTableViewController.swift */,
+				C39D608921A875D400D8DF0D /* ImgurDetailViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		C39D607B21A369D000D8DF0D /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				C39D607D21A85F2000D8DF0D /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		C39D607C21A369D200D8DF0D /* Network Client */ = {
+			isa = PBXGroup;
+			children = (
+				C39D608121A862BC00D8DF0D /* ImageRequest.swift */,
+			);
+			path = "Network Client";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +187,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C39D607E21A85F2000D8DF0D /* Main.storyboard in Resources */,
 				C39D606F21A3695700D8DF0D /* LaunchScreen.storyboard in Resources */,
 				C39D606C21A3695700D8DF0D /* Assets.xcassets in Resources */,
-				C39D606A21A3695600D8DF0D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +200,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C39D606721A3695600D8DF0D /* ViewController.swift in Sources */,
+				C39D608A21A875D400D8DF0D /* ImgurDetailViewController.swift in Sources */,
+				C39D608821A875C300D8DF0D /* ImgurSearchTableViewController.swift in Sources */,
+				C39D608621A8637A00D8DF0D /* ImgurImage.swift in Sources */,
 				C39D606521A3695600D8DF0D /* AppDelegate.swift in Sources */,
+				C39D608221A862BC00D8DF0D /* ImageRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C39D606821A3695600D8DF0D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C39D606921A3695600D8DF0D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C39D606D21A3695700D8DF0D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,7 +344,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23QW9JU9DK;
-				INFOPLIST_FILE = SoFiCodingChallenge/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SoFiCodingChallenge/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +362,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23QW9JU9DK;
-				INFOPLIST_FILE = SoFiCodingChallenge/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SoFiCodingChallenge/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
